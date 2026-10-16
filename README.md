@@ -5,10 +5,16 @@
 **纯本地只读、零联网、零凭据。** 不读任何密钥，不发任何请求，只解析你机器上 DSH 自己写下的文件。
 
 ```
-今日 ¥7.77 · 7 天 ¥86.90
+今日 ¥1.23 · 7 天 ¥8.40
 ```
 
-> 截图待补。位置在 `conversation.composer.dock`（输入框下方的状态带），紧跟官方的 token 用量之后。
+![状态栏一行](docs/images/strip.png)
+
+鼠标悬浮弹出近 7 天：
+
+![悬浮面板](docs/images/panel.png)
+
+> 上面两张是**示意图**（示例数字，由脚本渲染，不含任何真实账号数据）。真实界面里的位置是 `conversation.composer.dock`（输入框下方的状态带），紧跟官方的 token 用量之后。
 
 ## 安装
 
@@ -20,6 +26,8 @@ dsh plugin --profile desktop add dsh-cost-strip
 装完**完整退出 DSH 再重开**（宿主半边改了要重启进程；关窗口/刷新页面不算）。
 
 桌面版 profile 若被 Electron 独占而拒绝命令行安装，用侧边栏 Plugins → Add plugin 填 `dsh-cost-strip`，或 `--profile web` 安装后重启 `dsh web`。
+
+**兼容性**：已在 Windows 桌面版 DSH `0.2.0-rc.2` 上实测通过（宿主只读路由、输入框下方槽位注册、悬浮面板与数据来源标注均正常）。宿主需要 Node ≥ 22（用到内置 zstd）。
 
 ## 数据从哪来
 

@@ -5,8 +5,16 @@ A one-line cost strip for [DeepSeek Harness](https://github.com/deepseek-ai) (DS
 **Local-only, read-only, zero network, zero credentials.** No API keys are read, no requests are made — it only parses files DSH already wrote on your machine.
 
 ```
-Today ¥7.77 · 7d ¥86.90
+Today ¥1.23 · 7d ¥8.40
 ```
+
+![cost strip](docs/images/strip.png)
+
+Hover for the last 7 days:
+
+![hover panel](docs/images/panel.png)
+
+> Both images are demo renderings with example numbers — no real account data.
 
 ## Install
 
@@ -18,6 +26,8 @@ dsh plugin --profile desktop add dsh-cost-strip
 Then **fully quit and reopen DSH** (the host half changed, so the process must restart).
 
 If your desktop profile is exclusively managed by the Electron app and the CLI refuses, add it from the sidebar (Plugins → Add plugin → `dsh-cost-strip`).
+
+**Compatibility**: verified live on DSH `0.2.0-rc.2` (Windows desktop) — read-only host route, composer dock slot and hover panel all work. The host requires Node ≥ 22 (built-in zstd).
 
 ## Where the numbers come from
 
