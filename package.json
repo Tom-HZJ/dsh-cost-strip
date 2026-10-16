@@ -26,6 +26,15 @@
     "statusbar",
     "composer"
   ],
+  "author": "Tom-HZJ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tom-HZJ/dsh-cost-strip.git"
+  },
+  "homepage": "https://github.com/Tom-HZJ/dsh-cost-strip#readme",
+  "bugs": {
+    "url": "https://github.com/Tom-HZJ/dsh-cost-strip/issues"
+  },
   "engines": {
     "node": ">=22"
   },
