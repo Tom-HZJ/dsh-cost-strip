@@ -1,0 +1,51 @@
+{
+  "name": "dsh-cost-strip",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：输入框下方一行显示今日消费与近 7 天花费（纯本地只读、零联网、零凭据）",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cost",
+    "usage",
+    "statusbar",
+    "composer"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node test/run-tests.mjs",
+    "calibrate": "node tools/calibrate-prices.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}

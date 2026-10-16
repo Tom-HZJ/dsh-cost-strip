@@ -1,0 +1,6 @@
+# dsh-cost-strip bundle 补丁：把自己插进 profile 的 layer 栈。
+# 宿主半边只依赖 webServer 服务（注册一个只读路由），客户端半边注册进
+# conversation.composer.dock（输入框下方的 list 槽）。
+- insert:
+    - id: dsh-cost-strip
+      name: 'dsh-cost-strip'
