@@ -12,10 +12,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: 离线测试（26 项）
+      - name: 离线测试（85 项）
         run: node test/run-tests.mjs
       - name: 语法检查
         run: |
           node --check lib/index.js
           node --check lib/client.js
           node --check tools/calibrate-prices.mjs
+          node --check tools/render-docs-images.mjs

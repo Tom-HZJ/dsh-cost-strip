@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "currency": "CNY",
+  "unit": "perMillionTokens",
+  "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "fetchedAt": "2026-10-13",
+  "note": "DeepSeek 官方中文价目（CNY / 百万 tokens）。空闲时段价格为高峰时段的一半；高峰为北京时间周一至周五（不含中国法定节假日）09:00–12:00 与 14:00–18:00，其余时段（含周末全天）为空闲时段。",
+  "peakWindows": [
+    {
+      "from": "09:00",
+      "to": "12:00",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "from": "14:00",
+      "to": "18:00",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "offPeakFactor": 0.5,
+  "holidays": [],
+  "default": {
+    "input": 2,
+    "cacheRead": 0.04,
+    "cacheWrite": 2,
+    "output": 8
+  },
+  "models": {
+    "deepseek-official/deepseek-flash": {
+      "input": 2,
+      "cacheRead": 0.04,
+      "cacheWrite": 2,
+      "output": 8
+    },
+    "deepseek-official/deepseek-v4-flash": {
+      "input": 2,
+      "cacheRead": 0.04,
+      "cacheWrite": 2,
+      "output": 8
+    },
+    "deepseek-official/deepseek-v4-flash-vision-exp": {
+      "input": 2,
+      "cacheRead": 0.04,
+      "cacheWrite": 2,
+      "output": 8
+    },
+    "deepseek-official/deepseek-v4-pro": {
+      "input": 9,
+      "cacheRead": 0.3,
+      "cacheWrite": 9,
+      "output": 27
+    }
+  }
+}

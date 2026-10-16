@@ -1,11 +1,12 @@
 {
   "name": "dsh-cost-strip",
-  "version": "0.1.0",
-  "description": "DeepSeek Harness 插件：输入框下方一行显示今日消费与近 7 天花费（纯本地只读、零联网、零凭据）",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness 插件：输入框下方一行显示今日消费与近 7 天花费（纯本地只读、零联网、零凭据、不读别的插件的文件）",
   "type": "module",
   "main": "lib/index.js",
   "files": [
     "lib",
+    "data",
     "tools",
     "docs/images",
     "cordis.patch.yml",
